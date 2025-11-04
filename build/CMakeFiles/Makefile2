@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/lev/prog/lru_cache/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/lru_cache_mysql.dir/all
+all: CMakeFiles/lru_cache_sql.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/lru_cache_mysql.dir/clean
+clean: CMakeFiles/lru_cache_sql.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/lru_cache_mysql.dir
+# Target rules for target CMakeFiles/lru_cache_sql.dir
 
 # All Build rule for target.
-CMakeFiles/lru_cache_mysql.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lev/prog/lru_cache/build/CMakeFiles --progress-num=1,2,3,4 "Built target lru_cache_mysql"
-.PHONY : CMakeFiles/lru_cache_mysql.dir/all
+CMakeFiles/lru_cache_sql.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/lev/prog/lru_cache/build/CMakeFiles --progress-num=1,2,3,4 "Built target lru_cache_sql"
+.PHONY : CMakeFiles/lru_cache_sql.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/lru_cache_mysql.dir/rule: cmake_check_build_system
+CMakeFiles/lru_cache_sql.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lev/prog/lru_cache/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lru_cache_mysql.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lru_cache_sql.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/lev/prog/lru_cache/build/CMakeFiles 0
-.PHONY : CMakeFiles/lru_cache_mysql.dir/rule
+.PHONY : CMakeFiles/lru_cache_sql.dir/rule
 
 # Convenience name for target.
-lru_cache_mysql: CMakeFiles/lru_cache_mysql.dir/rule
-.PHONY : lru_cache_mysql
+lru_cache_sql: CMakeFiles/lru_cache_sql.dir/rule
+.PHONY : lru_cache_sql
 
 # clean rule for target.
-CMakeFiles/lru_cache_mysql.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/clean
-.PHONY : CMakeFiles/lru_cache_mysql.dir/clean
+CMakeFiles/lru_cache_sql.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/clean
+.PHONY : CMakeFiles/lru_cache_sql.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

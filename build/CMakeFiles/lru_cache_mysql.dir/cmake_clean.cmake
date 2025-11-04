@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o"
-  "CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o.d"
   "CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.o"
   "CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.o.d"
   "CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o"
   "CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o.d"
+  "CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o"
+  "CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o.d"
   "lru_cache_mysql"
   "lru_cache_mysql.pdb"
 )

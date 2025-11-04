@@ -83,24 +83,10 @@ CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lev/prog/lru_cache/src/lru_cache.cpp -o CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.s
 
-CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o: CMakeFiles/lru_cache_mysql.dir/flags.make
-CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o: /home/lev/prog/lru_cache/src/database.cpp
-CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o: CMakeFiles/lru_cache_mysql.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lev/prog/lru_cache/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o -MF CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o.d -o CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o -c /home/lev/prog/lru_cache/src/database.cpp
-
-CMakeFiles/lru_cache_mysql.dir/src/database.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lru_cache_mysql.dir/src/database.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lev/prog/lru_cache/src/database.cpp > CMakeFiles/lru_cache_mysql.dir/src/database.cpp.i
-
-CMakeFiles/lru_cache_mysql.dir/src/database.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lru_cache_mysql.dir/src/database.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lev/prog/lru_cache/src/database.cpp -o CMakeFiles/lru_cache_mysql.dir/src/database.cpp.s
-
 CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o: CMakeFiles/lru_cache_mysql.dir/flags.make
 CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o: /home/lev/prog/lru_cache/src/main.cpp
 CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o: CMakeFiles/lru_cache_mysql.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lev/prog/lru_cache/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lev/prog/lru_cache/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o -MF CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o.d -o CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o -c /home/lev/prog/lru_cache/src/main.cpp
 
 CMakeFiles/lru_cache_mysql.dir/src/main.cpp.i: cmake_force
@@ -111,18 +97,32 @@ CMakeFiles/lru_cache_mysql.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lru_cache_mysql.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lev/prog/lru_cache/src/main.cpp -o CMakeFiles/lru_cache_mysql.dir/src/main.cpp.s
 
+CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o: CMakeFiles/lru_cache_mysql.dir/flags.make
+CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o: /home/lev/prog/lru_cache/src/mysql_db.cpp
+CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o: CMakeFiles/lru_cache_mysql.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/lev/prog/lru_cache/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o -MF CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o.d -o CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o -c /home/lev/prog/lru_cache/src/mysql_db.cpp
+
+CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lev/prog/lru_cache/src/mysql_db.cpp > CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.i
+
+CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lev/prog/lru_cache/src/mysql_db.cpp -o CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.s
+
 # Object files for target lru_cache_mysql
 lru_cache_mysql_OBJECTS = \
 "CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.o" \
-"CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o" \
-"CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o"
+"CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o" \
+"CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o"
 
 # External object files for target lru_cache_mysql
 lru_cache_mysql_EXTERNAL_OBJECTS =
 
 lru_cache_mysql: CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.o
-lru_cache_mysql: CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o
 lru_cache_mysql: CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o
+lru_cache_mysql: CMakeFiles/lru_cache_mysql.dir/src/mysql_db.cpp.o
 lru_cache_mysql: CMakeFiles/lru_cache_mysql.dir/build.make
 lru_cache_mysql: CMakeFiles/lru_cache_mysql.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/lev/prog/lru_cache/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lru_cache_mysql"
