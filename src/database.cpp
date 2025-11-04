@@ -15,7 +15,7 @@ bool Database::Connect() {
         driver_ = get_driver_instance();
         conn_.reset(driver_->connect(host_, user_, password_));
         conn_->setSchema(db_);
-        std::cout << "[DB] Connected to MySQL: " << db_ << "\n";
+        std::cout << "[DB] Connected to : " << db_ << "\n";
         return true;
     } catch (sql::SQLException & e) {
         std::cerr << "[DB] Connection failed: " << e.what() << "\n";
