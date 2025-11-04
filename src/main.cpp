@@ -1,34 +1,33 @@
-#include "allocator.hpp"
-#include "lru_cache.hpp"
-#include "database.hpp"
 #include <iostream>
+#include <memory>
+#include "mysql_db.hpp"
+#include "postgres_db.hpp"
+#include "lru_cache.hpp"
+#include "allocator.hpp"
 
 int main() {
-    Database db("localhost", "boss", "boss_password", "DB_EMPLOYEES");
+    std::unique_ptr<IDatabase> db;
 
-    if (!db.Connect())
+#ifdef USE_POSTGRES
+    std::cout << "[CONFIG] Using PostgreSQL backend\n";
+    db = std::make_unique<PostgresDB>("localhost", "user", "password", "employees_pg");
+#else
+    std::cout << "[CONFIG] Using MySQL backend\n";
+    db = std::make_unique<MySQLDB>("tcp://127.0.0.1:3306", "root", "root", "DB_EMPLOYEES");
+#endif
+
+    if (!db->Connect()) {
+        std::cerr << "Failed to connect to DB\n";
         return 1;
+    }
 
-    using Alloc = TrackingAllocator<std::pair<const int, std::string>>;
-    LRUCache<int, std::string, Alloc> cache(2);
+    TrackingAllocator<std::pair<const int, std::string>> alloc;
+    LRUCache<int, std::string, TrackingAllocator<std::pair<const int, std::string>>> cache(3, alloc);
 
-    auto fetch = [&](int id) -> std::string {
-        if (auto val = cache.Get(id)) {
-            std::cout << "[CACHE HIT] " << id << " -> " << *val << "\n";
-            return *val;
-        }
-        std::cout << "[CACHE MISS] Fetching from DB...\n";
-        auto value = db.GetValue(id);
-        cache.Put(id, value);
-        return value;
-    };
+    for (int id = 1; id <= 3; ++id) {
+        auto val = db->GetValue(id);
+        cache.Put(id, val);
+    }
 
-    fetch(1);
-    fetch(2);
-    fetch(1);
-    fetch(3);
-    fetch(2);
-    fetch(3);
-
-    return 0;
+    cache.Print();
 }

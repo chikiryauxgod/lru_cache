@@ -122,7 +122,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=lru_cache_mysql
+CMAKE_PROJECT_NAME:STATIC=lru_cache_sql
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -198,6 +198,12 @@ LRUCacheMySQL_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 LRUCacheMySQL_SOURCE_DIR:STATIC=/home/lev/prog/lru_cache
 
+//The directory containing a CMake configuration file for MySQL.
+MySQL_DIR:PATH=MySQL_DIR-NOTFOUND
+
+//Build with PostgreSQL backend
+USE_POSTGRES:BOOL=OFF
+
 //Value Computed by CMake
 lru_cache_mysql_BINARY_DIR:STATIC=/home/lev/prog/lru_cache/build
 
@@ -206,6 +212,24 @@ lru_cache_mysql_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 lru_cache_mysql_SOURCE_DIR:STATIC=/home/lev/prog/lru_cache
+
+//Value Computed by CMake
+lru_cache_mysql_postgres_BINARY_DIR:STATIC=/home/lev/prog/lru_cache/build
+
+//Value Computed by CMake
+lru_cache_mysql_postgres_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+lru_cache_mysql_postgres_SOURCE_DIR:STATIC=/home/lev/prog/lru_cache
+
+//Value Computed by CMake
+lru_cache_sql_BINARY_DIR:STATIC=/home/lev/prog/lru_cache/build
+
+//Value Computed by CMake
+lru_cache_sql_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+lru_cache_sql_SOURCE_DIR:STATIC=/home/lev/prog/lru_cache
 
 
 ########################

@@ -117,48 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lru_cache_mysql
+# Target rules for targets named lru_cache_sql
 
 # Build rule for target.
-lru_cache_mysql: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lru_cache_mysql
-.PHONY : lru_cache_mysql
+lru_cache_sql: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lru_cache_sql
+.PHONY : lru_cache_sql
 
 # fast build rule for target.
-lru_cache_mysql/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/build
-.PHONY : lru_cache_mysql/fast
-
-src/database.o: src/database.cpp.o
-.PHONY : src/database.o
-
-# target to build an object file
-src/database.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/database.cpp.o
-.PHONY : src/database.cpp.o
-
-src/database.i: src/database.cpp.i
-.PHONY : src/database.i
-
-# target to preprocess a source file
-src/database.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/database.cpp.i
-.PHONY : src/database.cpp.i
-
-src/database.s: src/database.cpp.s
-.PHONY : src/database.s
-
-# target to generate assembly for a file
-src/database.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/database.cpp.s
-.PHONY : src/database.cpp.s
+lru_cache_sql/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/build
+.PHONY : lru_cache_sql/fast
 
 src/lru_cache.o: src/lru_cache.cpp.o
 .PHONY : src/lru_cache.o
 
 # target to build an object file
 src/lru_cache.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/lru_cache.cpp.o
 .PHONY : src/lru_cache.cpp.o
 
 src/lru_cache.i: src/lru_cache.cpp.i
@@ -166,7 +142,7 @@ src/lru_cache.i: src/lru_cache.cpp.i
 
 # target to preprocess a source file
 src/lru_cache.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/lru_cache.cpp.i
 .PHONY : src/lru_cache.cpp.i
 
 src/lru_cache.s: src/lru_cache.cpp.s
@@ -174,7 +150,7 @@ src/lru_cache.s: src/lru_cache.cpp.s
 
 # target to generate assembly for a file
 src/lru_cache.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/lru_cache.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/lru_cache.cpp.s
 .PHONY : src/lru_cache.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -182,7 +158,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -190,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -198,8 +174,32 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_mysql.dir/build.make CMakeFiles/lru_cache_mysql.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
+
+src/mysql_db.o: src/mysql_db.cpp.o
+.PHONY : src/mysql_db.o
+
+# target to build an object file
+src/mysql_db.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/mysql_db.cpp.o
+.PHONY : src/mysql_db.cpp.o
+
+src/mysql_db.i: src/mysql_db.cpp.i
+.PHONY : src/mysql_db.i
+
+# target to preprocess a source file
+src/mysql_db.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/mysql_db.cpp.i
+.PHONY : src/mysql_db.cpp.i
+
+src/mysql_db.s: src/mysql_db.cpp.s
+.PHONY : src/mysql_db.s
+
+# target to generate assembly for a file
+src/mysql_db.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lru_cache_sql.dir/build.make CMakeFiles/lru_cache_sql.dir/src/mysql_db.cpp.s
+.PHONY : src/mysql_db.cpp.s
 
 # Help Target
 help:
@@ -209,16 +209,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lru_cache_mysql"
-	@echo "... src/database.o"
-	@echo "... src/database.i"
-	@echo "... src/database.s"
+	@echo "... lru_cache_sql"
 	@echo "... src/lru_cache.o"
 	@echo "... src/lru_cache.i"
 	@echo "... src/lru_cache.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mysql_db.o"
+	@echo "... src/mysql_db.i"
+	@echo "... src/mysql_db.s"
 .PHONY : help
 
 

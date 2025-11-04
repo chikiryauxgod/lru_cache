@@ -40,5 +40,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lru_cache_mysql.dir/DependInfo.cmake"
+  "CMakeFiles/lru_cache_sql.dir/DependInfo.cmake"
   )
