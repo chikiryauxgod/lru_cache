@@ -10,8 +10,8 @@
 
 class IDatabase {
 public:
-    virtual ~IDatabase() = default;
+  virtual ~IDatabase() = default;
 
-    virtual bool Connect() = 0;
-    virtual std::string GetValue(int id) = 0;
+  virtual bool Connect() = 0;
+  virtual std::string GetValue(int id) = 0;
 };

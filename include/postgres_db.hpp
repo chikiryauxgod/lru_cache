@@ -5,19 +5,16 @@
 */
 
 #pragma once
-#include "Idatabase.hpp"
+#include "database_base.hpp"
 #include <iostream>
 #include <string>
 
-class PostgresDB : public IDatabase {
+class PostgresDB : public DatabaseBase {
 public:
-    PostgresDB(const std::string & host,
-               const std::string & user,
-               const std::string & password,
-               const std::string & db);
+  explicit PostgresDB(const DatabaseConfig& cfg);
 
-    bool Connect() override;
-    std::string GetValue(int id) override;
+  bool Connect() override;
+  std::string GetValue(int id) override;
 
 private:
     std::string host_, user_, password_, db_;
