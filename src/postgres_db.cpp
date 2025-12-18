@@ -1,27 +1,27 @@
 #include "postgres_db.hpp"
 
-PostgresDB::PostgresDB(const std::string & host,
-                       const std::string & user,
-                       const std::string & password,
-                       const std::string & db)
-    : host_(host), user_(user), password_(password), db_(db), connected_(false) {}
+PostgresDB::PostgresDB(const DatabaseConfig& cfg)
+    : DatabaseBase(cfg) {}
 
 bool PostgresDB::Connect() {
-    std::cout << "[Postgres] Simulating connection to " << db_
-              << " at " << host_ << " as user " << user_ << "\n";
-    connected_ = true;
-    return connected_;
+  std::cout << "[Postgres] Simulating connection to "
+            << cfg_.database << " at "
+            << cfg_.host << ":" << cfg_.port
+            << " as user " << cfg_.user << "\n";
+  connected_ = true;
+  return true;
 }
+
 
 // Imitation vaule
 
 std::string PostgresDB::GetValue(int id) {
-    if (!connected_) {
-        std::cerr << "[Postgres] Not connected!\n";
-        return {};
-    }
+  if (!connected_) {
+    std::cerr << "[Postgres] Not connected!\n";
+    return {};
+  }
 
-    std::cout << "[Postgres] Simulating SELECT for id=" << id << "\n";
+  std::cout << "[Postgres] Simulating SELECT for id=" << id << "\n";
 
-    return "fake_pg_value_" + std::to_string(id);
+  return "fake_pg_value_" + std::to_string(id);
 }

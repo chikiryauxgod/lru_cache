@@ -7,28 +7,20 @@
 
 
 #pragma once
-#include "Idatabase.hpp"
-#include <cppconn/driver.h>
-#include <cppconn/connection.h>
+#include "database_base.hpp"
 #include <cppconn/prepared_statement.h>
 #include <cppconn/resultset.h>
 #include <iostream>
-#include <memory>
 
-class MySQLDB : public IDatabase {
+class MySQLDB : public DatabaseBase {
 public:
-    MySQLDB(const std::string & host,
-                  const std::string & user,
-                  const std::string & password,
-                  const std::string & db,
-                  const std::string & table = "data",
-                  const std::string & column = "value");
+  explicit MySQLDB(const DatabaseConfig& cfg);
 
-    bool Connect() override;
-    std::string GetValue(int id) override;
+  bool Connect() override;
+  std::string GetValue(int id) override;
 
 private:
-    std::string host_, user_, password_, db_, table_, column_;
-    sql::Driver* driver_;
-    std::unique_ptr<sql::Connection> conn_;
+  std::string table_  = "data";
+  std::string column_ = "value";
 };
+
