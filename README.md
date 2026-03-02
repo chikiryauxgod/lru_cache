@@ -1,3 +1,6 @@
 ## lru_cache
 
-This project implements an embeddable LRU cache in modern C++ with support for custom memory allocators and pluggable database backends (MySQL and PostgreSQL). It demonstrates how to reduce database load and access latency by caching frequently requested data, while keeping full control over memory allocation and avoiding tight coupling to a specific database implementation. The cache is designed to be easily integrated into existing systems and serves as a practical example of clean architecture, STL allocator usage, and backend abstraction in performance-oriented C++ applications.
+This project implements an embeddable LRU cache in modern C++ with support for custom memory allocators and pluggable database backends (MySQL and PostgreSQL). 
+It demonstrates how to reduce database load and access latency by caching frequently requested data, while keeping full control over memory allocation and avoiding tight coupling to a specific database implementation. 
+The cache is designed to be easily integrated into existing systems and serves as a practical example of clean architecture, STL allocator usage, and backend abstraction in performance-oriented C++ applications.
+
